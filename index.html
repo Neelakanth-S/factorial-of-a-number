@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+       h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 100px auto;
+}
+body{
+    background-color: lightblue;
+}
+form{
+    text-align: center;
+   
+}
+input,button{
+    padding: 12px;
+    border-radius: 15px;
+    text-align: center;
+}
+#result{
+    font-size: 28px;
+    font-family: calibri;
+    color: green;
+    text-align: center;
+
+}
+input:hover{
+    border-color: red;
+    size: 20px;
+    text-align: center;
+}
+
+   </style>
+    <title>Factorial Number</title>
+</head>
+
+<body>
+    <h1>Calculate Factorial of a Number</h1>
+    <form id="form">
+        <input type="text" id="number"><br><br>
+        <input type="button" value="Click Me!!" onclick="fn()">
+    </form>
+    <p id="result"></p>
+    <script>
+        function fn() {
+    var num = document.getElementById("number").value;
+    var a = 1;
+    for (i = 1; i <= num; i++) {
+        a = a * i;
+    }
+    document.getElementById("result").innerHTML = "Your Answer is " + a;
+}
+    </script>
+</body>
+
+</html>
